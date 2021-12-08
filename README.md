@@ -52,7 +52,7 @@ docker-compose version 1.29.2, build 5becea4c
 ~~~
 sudo groupadd docker
 ~~~
-2. เพิ่มผู้ใช้ของคุณในdockerกลุ่ม
+2. เพิ่มผู้ใช้ของคุณใน docker group
 ~~~
 sudo usermod -aG docker $USER
 ~~~
@@ -62,7 +62,7 @@ sudo usermod -aG docker $USER
 ~~~
 newgrp docker 
 ~~~
-4. ตรวจสอบว่าคุณสามารถรันdockerคำสั่งได้โดยไม่ต้องใช้ sudo
+4. ตรวจสอบว่าคุณสามารถรัน `docker` คำสั่งได้โดยไม่ต้องใช้ sudo
 ~~~
 docker run hello-world
 ~~~
